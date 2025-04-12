@@ -6,7 +6,7 @@ from logging.handlers import RotatingFileHandler
 
 # Constants for logging configuration
 LOG_DIR = 'logs' # Directory to store log files
-LOG_FILE = f'{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log' # Log file name
+LOG_FILE = f'{datetime.now().strftime("%m_%d_%Y_%H_%M_%S")}.log' # Log file name
 MAX_LOG_SIZE = 5 * 1024 * 1024 # Maximum log file size in bytes (5 MB)
 BACKUP_COUNT = 3 # Number of backup log files to keep
 

@@ -1,4 +1,4 @@
-# below code is to check the logging config
+## below code is to check the logging config
 # from src.logger import logging
 
 # logging.debug("This is a debug message.")
@@ -22,3 +22,10 @@
 #     raise MyException(e, sys) from e
 
 # --------------------------------------------------------------------------------
+
+# # below code is to check the data ingestion config
+
+from src.pipeline.training_pipeline import TrainPipeline
+
+pipeline = TrainPipeline()
+pipeline.run_pipeline()
