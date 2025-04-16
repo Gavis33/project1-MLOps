@@ -21,7 +21,7 @@ def error_message_detail(error: Exception, error_detail: sys) -> str:
 
     # Create a formatted error message with file name, line number, and error message
     line_number = exc_tb.tb_lineno
-    error_message = f'Error occured in python script name [{file_name}] at line number [{line_number}]: Error message [{str(error)}]'
+    error_message = f'Error occured in python script name {file_name} at line number {line_number}: Error message: {str(error)}'
 
     # Log the error for better tracking
     logging.info(error_message)
